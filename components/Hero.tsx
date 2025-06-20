@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import {
-  Bot,
   ArrowRight,
   Calendar,
   Phone,
   MessageSquare,
   Clock,
 } from "lucide-react";
+import Image from "next/image";
 import { openCalendly } from "@/lib/utils";
 
 export default function Hero() {
@@ -131,7 +131,12 @@ export default function Hero() {
                 className="group relative px-8 py-4 bg-[#2BC4D8] text-white font-bold rounded-xl text-lg overflow-hidden font-lexend"
               >
                 <span className="relative z-10 flex items-center gap-3 justify-center">
-                  <Bot className="w-6 h-6" />
+                  <Image
+                    src="/logo.png"
+                    alt="Rixie AI logo"
+                    width={24}
+                    height={24}
+                  />
                   Book Demo Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -198,7 +203,13 @@ export default function Hero() {
                     }}
                     className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 rounded-full border-2 border-gray-600/30 flex items-center justify-center bg-gray-800/50"
                   >
-                    <Bot className="w-8 h-8 sm:w-10 sm:h-10 text-gray-300" />
+                    <Image
+                      src="/logo.png"
+                      alt="Rixie AI logo"
+                      width={40}
+                      height={40}
+                      className="w-8 h-8 sm:w-10 sm:h-10"
+                    />
                   </motion.div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white font-lexend mb-3">

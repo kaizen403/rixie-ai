@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Bot, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { cn, openCalendly } from "@/lib/utils";
 
 export default function Navigation() {
@@ -39,11 +40,15 @@ export default function Navigation() {
                 repeat: Number.POSITIVE_INFINITY,
                 ease: "linear",
               }}
-              className="relative"
+              className="relative w-8 h-8"
             >
-              <div className="w-8 h-8 bg-[#2BC4D8] rounded-lg flex items-center justify-center">
-                <Bot className="h-5 w-5 text-white" />
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Rixie AI logo"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
             </motion.div>
             <span className="text-xl font-bold text-[#2BC4D8] font-lexend tracking-tight">
               Rixie AI
