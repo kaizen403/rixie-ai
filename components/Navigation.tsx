@@ -32,28 +32,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div className="flex items-center space-x-4">
-            <motion.div
-              animate={{ rotate: [0, 360] }}
-              transition={{
-                duration: 20,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "linear",
-              }}
-              className="relative w-8 h-8"
-            >
-              <Image
-                src="/logo.png"
-                alt="Rixie AI logo"
-                width={32}
-                height={32}
-                className="rounded-lg"
-              />
-            </motion.div>
-            <span className="text-xl font-bold text-[#2BC4D8] font-lexend tracking-tight">
-              Rixie AI
-            </span>
-          </motion.div>
+
+          <Image
+            src="/logo.png"
+            alt="Rixie AI logo"
+            width={85}
+            height={85}
+            className="rounded-lg"
+          />
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
@@ -143,4 +129,3 @@ export default function Navigation() {
     </motion.nav>
   );
 }
-

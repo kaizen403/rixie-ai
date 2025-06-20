@@ -2,27 +2,26 @@
 
 import { motion } from "framer-motion";
 import {
+  Bot,
   ArrowRight,
   Calendar,
   Phone,
   MessageSquare,
   Clock,
 } from "lucide-react";
-import Image from "next/image";
 import { openCalendly } from "@/lib/utils";
 
 export default function Hero() {
   const tasks = [
     { text: "Schedule a meeting with Rishi at 5pm today", icon: Calendar },
-    { text: "Call my wife and tell her I love you", icon: Phone },
+    { text: "Call my wife and tell her that love her ", icon: Phone },
     { text: "Add contract signing to my todo", icon: Clock },
-    { text: "Make a call to Diya for progress", icon: Phone },
+    { text: "Make a call to Diya for lunch", icon: Phone },
     { text: "Remind me in 5pm to drink protein", icon: Clock },
-    { text: "Book dinner reservation for Friday", icon: Calendar },
-    { text: "Send follow-up email to client", icon: MessageSquare },
-    { text: "Order office supplies", icon: Clock },
-    { text: "Cancel gym membership", icon: Phone },
-    { text: "Update LinkedIn profile", icon: Clock },
+    {
+      text: "Arrage a metting for me with the Design team",
+      icon: Phone,
+    },
   ];
 
   return (
@@ -42,7 +41,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700/50 font-lexend"
+                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded-full border border-gray-700/50 font-lexend"
               >
                 BETA
               </motion.span>
@@ -50,7 +49,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700/50 font-lexend"
+                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded-full border border-gray-700/50 font-lexend"
               >
                 AI POWERED
               </motion.span>
@@ -131,23 +130,10 @@ export default function Hero() {
                 className="group relative px-8 py-4 bg-[#2BC4D8] text-white font-bold rounded-xl text-lg overflow-hidden font-lexend"
               >
                 <span className="relative z-10 flex items-center gap-3 justify-center">
-                  <Image
-                    src="/logo.png"
-                    alt="Rixie AI logo"
-                    width={24}
-                    height={24}
-                  />
+                  <Bot className="w-6 h-6" />
                   Book Demo Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
-              </motion.button>
-
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 bg-transparent border border-[#2BC4D8]/50 text-[#2BC4D8] font-bold rounded-xl text-lg font-lexend hover:bg-[#2BC4D8]/5 transition-colors"
-              >
-                Watch Demo
               </motion.button>
             </motion.div>
 
@@ -203,20 +189,14 @@ export default function Hero() {
                     }}
                     className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 rounded-full border-2 border-gray-600/30 flex items-center justify-center bg-gray-800/50"
                   >
-                    <Image
-                      src="/logo.png"
-                      alt="Rixie AI logo"
-                      width={40}
-                      height={40}
-                      className="w-8 h-8 sm:w-10 sm:h-10"
-                    />
+                    <Bot className="w-8 h-8 sm:w-10 sm:h-10 text-gray-300" />
                   </motion.div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white font-lexend mb-3">
-                  AI Task Management
+                  Rixie&apos;s Task Queue
                 </h3>
                 <p className="text-sm sm:text-base text-gray-400 font-lexend">
-                  Processing tasks intelligently
+                  Processes tasks intelligently
                 </p>
               </motion.div>
 
@@ -276,9 +256,7 @@ export default function Hero() {
                     />
                   ))}
                 </div>
-                <span className="text-sm sm:text-base text-gray-400 font-lexend">
-                  Processing
-                </span>
+                <span className="text-sm sm:text-base text-gray-400 font-lexend"></span>
               </motion.div>
             </div>
           </motion.div>

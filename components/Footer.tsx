@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Twitter,
-  Linkedin,
-  Github,
-  Mail,
-  Phone,
-  MapPin,
-} from "lucide-react";
+import { Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 
 const footerLinks = {
@@ -125,11 +118,10 @@ export default function Footer() {
           </p>
 
           <div className="text-xs text-gray-500 font-lexend">
-            Powered by Advanced AI Technology
+            Grig Techonologies Pvt Ltd
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
