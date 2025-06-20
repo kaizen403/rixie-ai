@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Bot,
   Twitter,
   Linkedin,
   Github,
@@ -9,6 +8,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   product: [
@@ -39,7 +39,13 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <Bot className="h-8 w-8 text-[#2BC4D8]" />
+                <Image
+                  src="/logo.png"
+                  alt="Rixie AI logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span className="text-2xl font-bold text-[#2BC4D8] font-lexend">
                   Rixie AI
                 </span>
