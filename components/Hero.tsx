@@ -14,12 +14,20 @@ import { openCalendly } from "@/lib/utils";
 export default function Hero() {
   const tasks = [
     { text: "Schedule a meeting with Rishi at 5pm today", icon: Calendar },
-    { text: "Call my wife and tell her that love her ", icon: Phone },
-    { text: "Add contract signing to my todo", icon: Clock },
+    {
+      text: "Call all my friends personally and invite them to the party",
+      icon: Phone,
+    },
+    {
+      text: "Prepare notes from my last meeting and update Ryan",
+      icon: Clock,
+    },
+    { text: "Call my wife and tell her that love her", icon: Phone },
+    { text: "Remind Ryan about contract signing tomorrow", icon: Clock },
     { text: "Make a call to Diya for lunch", icon: Phone },
     { text: "Remind me in 5pm to drink protein", icon: Clock },
     {
-      text: "Arrage a metting for me with the Design team",
+      text: "Arrage a meeting for me with the Design team",
       icon: Phone,
     },
   ];
