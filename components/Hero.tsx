@@ -15,19 +15,19 @@ export default function Hero() {
   const tasks = [
     { text: "Schedule a meeting with Rishi at 5pm today", icon: Calendar },
     {
-      text: "Call all my friends personally and invite them to the party",
+      text: "Call all my friends for party at 5pm",
       icon: Phone,
     },
     {
-      text: "Prepare notes from my last meeting and update Ryan",
+      text: "Prepare notes from my last also update Ryan",
       icon: Clock,
     },
     { text: "Call my wife and tell her that love her", icon: Phone },
     { text: "Remind Ryan about contract signing tomorrow", icon: Clock },
-    { text: "Make a call to Diya for lunch", icon: Phone },
+    { text: "Make a call to Aryan for lunch", icon: Phone },
     { text: "Remind me in 5pm to drink protein", icon: Clock },
     {
-      text: "Arrage a meeting for me with the Design team",
+      text: "Arrange a meeting with the Design team",
       icon: Phone,
     },
   ];
@@ -38,32 +38,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8">
-            {/* Tags */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="flex gap-3 mb-8"
-            >
-              <motion.span
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded-full border border-gray-700/50 font-lexend"
-              >
-                BETA
-              </motion.span>
-              <motion.span
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="px-4 py-2 bg-gray-800/80 text-gray-300 text-sm font-medium rounded-full border border-gray-700/50 font-lexend"
-              >
-                AI POWERED
-              </motion.span>
-            </motion.div>
-
-            {/* Main Title */}
+            {/* Tags */} {/* Main Title */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -93,7 +68,6 @@ export default function Hero() {
                 />
               </motion.h1>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -101,29 +75,24 @@ export default function Hero() {
               className="relative"
             >
               <h2 className="text-lg sm:text-xl md:text-2xl font-light text-gray-400 mb-3 font-lexend">
-                The AI That Makes You
+                Switch on autopilot
               </h2>
               <div className="relative inline-block">
                 <span className="text-lg sm:text-xl md:text-2xl font-semibold text-[#2BC4D8] font-lexend tracking-wide">
-                  FIRE YOUR SECRETARY
+                  Let AI manage the rest.{" "}
                 </span>
               </div>
             </motion.div>
-
             <motion.p
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-gray-300 leading-relaxed font-lexend"
             >
-              Forge genuine connections with calls, texts, reminders, and
-              answers that feel human.
-              <span className="block mt-2 text-[#2BC4D8] font-medium">
-                Dont wait. Shes not worth it. Replace your secretary with Rixie
-                AI now!
-              </span>
+              Rixie AI makes & takes calls, messages, schedules meetings,
+              reminders, meeting notes.. much more
+              <span className="block mt-2 text-[#2BC4D8] font-medium"></span>
             </motion.p>
-
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -144,7 +113,6 @@ export default function Hero() {
                 </span>
               </motion.button>
             </motion.div>
-
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

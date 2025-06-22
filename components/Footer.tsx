@@ -45,8 +45,8 @@ export default function Footer() {
               </div>
 
               <p className="text-gray-400 leading-relaxed max-w-sm font-lexend">
-                Rixie AI makes you fire your secretary. Forge genuine
-                connections with calls, texts, and reminders that feel human.
+                Rixie AI: Flip on autopilot and AI’s got the rest. Let Rixie
+                handle your routine effortlessly.
               </p>
 
               {/* Social Links */}

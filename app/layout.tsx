@@ -1,32 +1,33 @@
-import './globals.css';
-import '@fontsource/lexend/latin.css';
-import Script from 'next/script';
-import type { Metadata } from 'next';
+import "./globals.css";
+import "@fontsource/lexend/latin.css";
+import Script from "next/script";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Rixie AI - The AI That Makes You Fire Your Secretary',
-  description: 'Forge genuine connections—calls, texts, reminders, and answers that feel human.',
+  title: "Rixie AI: Flip on autopilot and AI’s got the rest.",
+  description:
+    "Rixie AI: Flip on autopilot and AI’s got the rest. Let Rixie handle your routine effortlessly.",
   keywords: [
-    'AI assistant',
-    'virtual secretary',
-    'schedule automation',
-    'Rixie AI',
+    "AI task management",
+    "virtual assistant",
+    "autopilot",
+    "Rixie AI",
   ],
   openGraph: {
-    title: 'Rixie AI - The AI That Makes You Fire Your Secretary',
+    title: "Rixie AI: Flip on autopilot and AI’s got the rest.",
     description:
-      'Forge genuine connections—calls, texts, reminders, and answers that feel human.',
-    url: 'https://rixie.in',
-    siteName: 'Rixie AI',
+      "Rixie AI: Flip on autopilot and AI’s got the rest. Let Rixie handle your routine effortlessly.",
+    url: "https://rixie.in",
+    siteName: "Rixie AI",
     images: [
       {
-        url: '/android-chrome-512x512.png',
+        url: "/android-chrome-512x512.png",
         width: 512,
         height: 512,
-        alt: 'Rixie AI logo',
+        alt: "Rixie AI logo",
       },
     ],
-    type: 'website',
+    type: "website",
   },
 };
 
@@ -46,7 +47,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="keywords"
-          content="AI assistant, virtual secretary, schedule automation, Rixie AI"
+          content="AI task management, virtual assistant, autopilot, Rixie AI"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/android-chrome-512x512.png" />
@@ -63,3 +64,4 @@ export default function RootLayout({
     </html>
   );
 }
+
